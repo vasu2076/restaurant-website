@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href="./index.css" rel="stylesheet">
+</head>
+ <body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="70" tabindex="0">
+
+<header class="transparent fixed-top" id="mainHeader">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/chef-hat.png" alt="logo">
+        Delicious
+      </a>
+      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item"><a class="nav-link active" href="#Home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Reservation">Reservation</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Team">Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link search-icon" href="#"><i class="fas fa-search text-white"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<section class="hero-section" id="Home">
+  <div class="swiper heroSwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image: url(./hero1.jpg);">
+        <div class="hero-content">
+          <h1>Welcome to Delicious</h1>
+          <p>Experience the finest dining with fresh ingredients and authentic recipes.</p>
+          <a href="#" class="btn">Explore Menu</a>
+        </div>
+      </div>
+      <div class="swiper-slide" style="background-image: url('./hero2.jpg');">
+        <div class="hero-content">
+          <h1>Delicious Italian Cuisine</h1>
+          <p>Enjoy handcrafted pastas, wood-fired pizzas, and more.</p>
+          <a href="#" class="btn">Order Now</a>
+        </div>
+      </div>
+      <div class="swiper-slide" style="background-image: url('./hero3.jpg');">
+        <div class="hero-content">
+          <h1>Fresh & Organic Dishes</h1>
+          <p>We serve healthy and tasty meals made with love.</p>
+          <a href="#" class="btn">Book a Table</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+
+<section class="story-section" id="About">
+  <div class="container">
+    <h6>Discover</h6>
+    <h2>Our Story</h2>
+    <blockquote>
+      “We believe food is not just a necessity — it's an experience. From street markets in Mumbai to kitchens in Rome, our dishes carry flavors from around the world.”
+    </blockquote>
+    <p>
+      Our journey started in a small family kitchen, blending passion with heritage. Today, we continue to serve recipes passed down through generations and inspired by global adventures.
+    </p>
+    <p>
+      From hand-picked ingredients to artistic plating, every dish tells a story. Join us as we celebrate food, culture, and community with every plate we serve.
+    </p>
+
+   <div class="row story-cards">
+  <div class="col-md-4">
+    <img src="https://html.multipurposethemes.com/restaurant-five/images/img-1.jpg" alt="Expert Chefs">
+    <h5>Expert Chefs</h5>
+    <p>Our talented chefs bring global techniques and local ingredients together to create magic on the plate.</p>
+  </div>
+  <div class="col-md-4">
+    <img src="https://html.multipurposethemes.com/restaurant-five/images/img-2.jpg" alt="Elegant Ambience">
+    <h5>Elegant Ambience</h5>
+    <p>Dine in a warm, stylish setting perfect for intimate dinners and special celebrations.</p>
+  </div>
+  <div class="col-md-4">
+    <img src="https://html.multipurposethemes.com/restaurant-five/images/img-3.jpg" alt="Fresh Ingredients">
+    <h5>Fresh Ingredients</h5>
+    <p>We use only fresh, organic, and locally sourced ingredients for exceptional taste and quality.</p>
+  </div>
+</div>
+
+  </div>
+</section>
+
+<section id="Reservation" class="py-5">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2>Book a Table</h2>
+      <p class="text-light">Reserve your spot now for an unforgettable dining experience</p>
+    </div>
+    <form class="row g-3">
+      <div class="col-md-6">
+        <input type="text" class="form-control" placeholder="First Name" required>
+      </div>
+      <div class="col-md-6">
+        <input type="text" class="form-control" placeholder="Last Name" required>
+      </div>
+      <div class="col-md-6">
+        <input type="email" class="form-control" placeholder="Email Address" required>
+      </div>
+      <div class="col-md-6">
+        <input type="tel" class="form-control" placeholder="Phone Number" required>
+      </div>
+      <div class="col-md-6">
+        <input type="date" class="form-control" required>
+      </div>
+      <div class="col-md-6">
+        <input type="number" class="form-control" placeholder="Number of Persons" min="1" required >
+      </div>
+     <div class="col-12">
+  <textarea class="form-control" rows="3" placeholder="Mention your food preference, favorite dish, or dietary needs (e.g., Vegetarian, Non-Veg, Gluten-free, No onions, etc)" style="height: 200px !important;"></textarea>
+</div>
+
+      <div class="col-12 text-center">
+        <button type="submit" class="btn btn-dark px-5">Book Now</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+  <section id="Gallery">
+ <div class="text-container">
+    <h2>Amazing</h2>
+    <h1>Delicious</h1>
+    <div class="underline"></div>
+  </div>
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="https://html.multipurposethemes.com/restaurant-five/images/pic-3.jpg" alt="">
+      <i class="fa-solid fa-expand zoom-icon"></i>
+    </div>
+    <div class="gallery-item">
+      <img src="https://html.multipurposethemes.com/restaurant-five/images/pic-6.jpg" alt="">
+    <i class="fa-solid fa-expand zoom-icon"></i>
+    </div>
+   <div class="gallery-item">
+      <img src="https://img.freepik.com/free-photo/delicious-pesto-pasta-plate_23-2150690771.jpg?uid=R203151179&ga=GA1.1.627833558.1747904160&semt=ais_hybrid&w=740" alt="">
+     <i class="fa-solid fa-expand zoom-icon"></i>
+    </div>
+    <div class="gallery-item">
+      <img src="https://img.freepik.com/free-photo/pancake-tower-plate-with-blueberries_23-2148359260.jpg?uid=R203151179&ga=GA1.1.627833558.1747904160&semt=ais_hybrid&w=740" alt="">
+     <i class="fa-solid fa-expand zoom-icon"></i>
+    </div>
+    <div class="gallery-item">
+      <img src="https://img.freepik.com/free-photo/front-view-strawberry-milkshake-with-straw_23-2148707795.jpg?uid=R203151179&ga=GA1.1.627833558.1747904160&semt=ais_hybrid&w=740" alt="">
+     <i class="fa-solid fa-expand zoom-icon"></i>
+    </div>
+    <div class="gallery-item">
+      <img src="https://img.freepik.com/free-photo/warm-tomato-soup-serve-bowl_1150-42626.jpg?uid=R203151179&ga=GA1.1.627833558.1747904160&semt=ais_hybrid&w=740" alt="">
+      <i class="fa-solid fa-expand zoom-icon"></i>
+    </div>
+    <div class="gallery-item">
+      <img src="https://img.freepik.com/free-photo/crispy-mixed-pizza-with-olives-sausage_140725-3095.jpg?uid=R203151179&ga=GA1.1.627833558.1747904160&semt=ais_hybrid&w=740" alt="">
+      <i class="fa-solid fa-expand zoom-icon"></i>
+    </div>
+    <div class="gallery-item">
+      <img src="https://html.multipurposethemes.com/restaurant-five/images/pic-7.jpg" alt="">
+      <i class="fa-solid fa-expand zoom-icon"></i>
+    </div>
+  </div>
+</section>
+
+<section id="Menu">
+
+  <div class="filter-buttons">
+    <button class="filter-btn active" onclick="animateItems(this)">All</button>
+    <button class="filter-btn" onclick="animateItems(this)">Breakfast</button>
+    <button class="filter-btn" onclick="animateItems(this)">Soup</button>
+    <button class="filter-btn" onclick="animateItems(this)">Pizza</button>
+    <button class="filter-btn" onclick="animateItems(this)">Drink</button>
+  </div>
+
+  <div class="item-container" id="itemContainer">
+    <div class="item-card">
+      <img src="https://img.freepik.com/free-photo/warm-tomato-soup-serve-bowl_1150-42626.jpg?uid=R203151179&ga=GA1.1.627833558.1747904160&semt=ais_hybrid&w=740" alt="Tomato Soup" />
+      <h3>Tomato Soup</h3>
+      <p>Fresh tomatoes with basil and cream</p>
+      <div class="stars">★★★★★</div>
+      <div class="price">$6.50</div>
+    </div>
+
+
+<div class="item-card">
+  <img src="https://img.freepik.com/free-photo/top-view-delicious-soup-assortment_23-2148634458.jpg?uid=R203151179&ga=GA1.1.627833558.1747904160&semt=ais_hybrid&w=740" alt="Lentil Soup" />
+  <h3>Lentil Soup</h3>
+  <p>Hearty lentil soup with vegetables and spices</p>
+  <div class="stars">★★★★★</div>
+  <div class="price">$5.25</div>
+</div>
+
+    <div class="item-card">
+  <img src="https://img.freepik.com/free-photo/pancake-tower-plate-with-blueberries_23-2148359260.jpg?uid=R203151179&ga=GA1.1.627833558.1747904160&semt=ais_hybrid&w=740" alt="Pancake Stack" />
+  <h3>Pancake Stack</h3>
+  <p>Fluffy pancakes with maple syrup and butter</p>
+  <div class="stars">★★★★★</div>
+  <div class="price">$6.00</div>
+</div>
+   
+    <div class="item-card">
+  <img src="https://img.freepik.com/free-photo/delicious-pesto-pasta-plate_23-2150690771.jpg?uid=R203151179&ga=GA1.1.627833558.1747904160&semt=ais_hybrid&w=740" alt="Spinach Alfredo" />
+  <h3>Spinach Alfredo</h3>
+  <p>Creamy white sauce pasta with fresh spinach</p>
+  <div class="stars">★★★★☆</div>
+  <div class="price">$8.90</div>
+</div>
+
+
+ <div class="item-card">
+      <img src="https://img.freepik.com/free-photo/delicious-creamy-melted-cheese_23-2149332818.jpg?uid=R203151179&ga=GA1.1.627833558.1747904160&semt=ais_hybrid&w=740" alt="Cheese Pasta" />
+      <h3>Cheese Pasta</h3>
+      <p>Rich cheesy pasta with oregano</p>
+      <div class="stars">★★★★☆</div>
+      <div class="price">$8.25</div>
+    </div>
+
+    <div class="item-card">
+      <img src="https://img.freepik.com/free-photo/crispy-mixed-pizza-with-olives-sausage_140725-3095.jpg?uid=R203151179&ga=GA1.1.627833558.1747904160&semt=ais_hybrid&w=740" alt="Veg Pizza" />
+      <h3>Veg Pizza</h3>
+      <p>Fresh veggies on a crispy crust</p>
+      <div class="stars">★★★★★</div>
+      <div class="price">$9.50</div>
+    </div>
+ 
+<div class="item-card">
+  <img src="https://img.freepik.com/free-photo/classic-cooling-mojito_140725-77.jpg?uid=R203151179&ga=GA1.1.627833558.1747904160&semt=ais_hybrid&w=740" alt="Mojito" />
+  <h3>Mojito</h3>
+  <p>Refreshing lime and mint drink with soda</p>
+  <div class="stars">★★★★★</div>
+  <div class="price">$3.75</div>
+</div>
+
+<div class="item-card">
+  <img src="https://img.freepik.com/free-photo/front-view-strawberry-milkshake-with-straw_23-2148707795.jpg?uid=R203151179&ga=GA1.1.627833558.1747904160&semt=ais_hybrid&w=740" alt="Strawberry Smoothie" />
+  <h3>Strawberry Smoothie</h3>
+  <p>Fresh strawberries blended with yogurt & honey</p>
+  <div class="stars">★★★★☆</div>
+  <div class="price">$5.25</div>
+</div>
+ </div>
+</section>
+
+  <section class="chef-section" id="Team">
+    <h3>Meet</h3>
+    <h2>Our Chef</h2>
+    <div class="underline"></div>
+
+    <div class="chef-cards">
+      <div class="chef-card">
+        <img src="https://html.multipurposethemes.com/restaurant-five/images/team/team-1.jpg" alt="Chef 1">
+        <h4>Mike Doe</h4>
+        <p>Master Chef</p>
+      </div>
+      <div class="chef-card">
+        <img src="https://html.multipurposethemes.com/restaurant-five/images/team/team-2.jpg" alt="Chef 2">
+        <h4>John Smith</h4>
+        <p>Soup Chef</p>
+      </div>
+      <div class="chef-card">
+        <img src="https://html.multipurposethemes.com/restaurant-five/images/team/team-3.jpg" alt="Chef 3">
+        <h4>Ana Soley</h4>
+        <p>Grill Chef</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section container" id="Contact">
+        <div class="text-center mb-5 info">
+      <h2>Contact Us</h2>
+      <p>We’d love to hear from you! Fill out the form below or reach us directly.</p>
+    </div>
+
+
+    <div class="row g-4">
+      <div class="col-md-6">
+       <div class="img">
+        <img src="https://html.multipurposethemes.com/restaurant-five/images/pic-3.jpg" alt="slide">
+       </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="contact-form">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" class="form-control" id="subject" placeholder="Subject">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Your message..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19812.82274916965!2d-0.12859051036702107!3d51.50136094226336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c3404d9c2f%3A0xf46a30abcb62d726!2sLondon%20Eye!5e0!3m2!1sen!2sin!4v1718183540000!5m2!1sen!2sin" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe> 
+
+  <footer class="footer">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      <div class="col-md-3 mb-4">
+        <div class="logo">Delicious</div>
+        <p class="mt-3">Delicious food delivered hot and fresh to your doorstep. Experience the taste of happiness!</p>
+        <div class="social-icons mt-3">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <h5 class="mb-3">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Reservations</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <h5 class="mb-3">Contact Us</h5>
+        <p><i class="fas fa-map-marker-alt me-2"></i>123 Food Street, Flavor Town, India</p>
+        <p><i class="fas fa-phone me-2"></i>+91 98765 4321</p>
+        <p><i class="fas fa-envelope me-2"></i>contact@Delicious.com</p>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <h5 class="mb-3">Gallery</h5>
+        <div class="footer-img-grid">
+          <div class="row g-2">
+            <div class="col-6">
+              <img src="./hero1.jpg" alt="Food 1">
+            </div>
+            <div class="col-6">
+              <img src="./hero2.jpg" alt="Food 2">
+            </div>
+            <div class="col-6">
+              <img src="./hero3.jpg" alt="Food 3">
+            </div>
+            <div class="col-6">
+              <img src="https://img.freepik.com/free-photo/delicious-indian-food-tray_23-2148723505.jpg?uid=R203151179&ga=GA1.1.627833558.1747904160&semt=ais_hybrid&w=740" alt="Food 4">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom mt-4">
+      &copy; 2025 FoodieZone. All Rights Reserved.
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+
+  var swiper = new Swiper(".heroSwiper", {
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    effect: 'fade',
+  });
+    function animateItems(button) {
+      document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      const container = document.getElementById("itemContainer");
+      container.classList.remove("animate-slide-up");
+      void container.offsetWidth; // force reflow
+      container.classList.add("animate-slide-up");
+    }
+</script>
+</body>
+</html>
